@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    height: 100hv;
+}
+
+.container{
+    /* background-color: #1111; */
+    padding: 1rem;
+
+}
+
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* #menuIniciar{
+
+
+    
+} */
+
+.menuOculto{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 10rem;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    display: none;
+
+}
+#menuFechar{
+    margin: 3rem 6.5rem;
+}
+.menuOculto ul{
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }

@@ -23,7 +23,7 @@
 
     <header class="cabecalho">
       <nav id="menu" class="menuOculto">
-        <img id="menuFechar" src="assets/images/icon-menu-close.svg" alt="">
+        <img id="menuFechar" onclick="clickMenu()" src="assets/images/icon-menu-close.svg" alt="">
         <ul>
           <li>Home</li>
           <li>New</li>
@@ -34,7 +34,7 @@
       </nav>
       <div class="topo"> 
         <img class="logo" src="assets/images/logo.svg" alt="Logo da página, W com um ponto.">
-        <img id="menuIniciar" src="assets/images/icon-menu.svg" alt="">
+        <img id="menuIniciar" onclick="clickMenu()" src="assets/images/icon-menu.svg" alt="">
       </div>
 
     </header>
@@ -75,6 +75,9 @@
       Coded by <a href="#">Your Name Here</a>.
     </div>
   </div>
+
+  <script src="script.js"></script>
+
 </body>
 
 </html>
