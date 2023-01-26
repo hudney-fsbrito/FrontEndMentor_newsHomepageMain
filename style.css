@@ -5,6 +5,7 @@
 body {
     font-family: 'Inter', sans-serif;
     height: 100hv;
+    font-size: 15px;
 }
 
 .container {
@@ -30,12 +31,10 @@ body {
 .menuOculto {
     background-color: rgb(255, 255, 255);
     height: 100%;
-    /* width: 15rem; */
     width: 0rem;
     position: fixed;
     top: 0px;
     right: 0px;
-    /* display: none; */
 
 }
 
@@ -56,6 +55,7 @@ body {
     padding-left: 1em;
     font-weight: 700;
 }
+
 .menuOculto a:hover {
     color: hsl(35, 77%, 62%);
     cursor: pointer;
@@ -63,6 +63,73 @@ body {
 
 }
 
+.titulo-principal {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.titulo-principal+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.btn-veja-mais {
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    padding: 1rem;
+    border: none;
+}
+
+.btn-veja-mais:hover {
+    background-color: hsl(240, 100%, 5%);
+    cursor: pointer;
+    transition-duration: 500ms;
+    
+}
+
+
+/* Container do artigo */
+.container-artigos{
+    background-color:  hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-bottom: 4rem;
+    line-height: 2;
+}
+.borda {
+    color: hsl(233, 8%, 79%);
+    border-bottom: 1px solid hsl(233, 8%, 79%);
+    padding-bottom: 2rem;
+}
+
+.noticia{
+    color: hsl(35, 77%, 62%);
+}
+.container-titulo-noticia{
+    margin-top: 1rem;
+    
+}
+.titulo-noticia:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+.titulo-noticia + p {
+    letter-spacing: 1px;
+    line-height: 2;
+    color: hsl(233, 8%, 79%);
+}
 .imagemWeb3d img {
     /* display: inline-block; */
     box-sizing: content-box;
@@ -76,13 +143,49 @@ article {
 }
 
 
+/* Container de outras notícias */
 
+.container-outras-noticias{
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+}
 
+.noticias-topicos{
+    display: flex;
+    justify-content: baseline;
+    margin-bottom: 2rem;
+}
+.noticias-topicos img{
+    height: 10rem;
+    margin-right: 1.5rem;
 
+}
 
+.topico-texto{
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+.topico-texto h2{
+
+    line-height: 1;
+    font-size: 2rem;
+    color: hsl(233, 8%, 79%);
+    padding-bottom: 1.5rem;
+}
+
+.topico-texto h3{
+    padding-bottom: 1.5rem;
+}
+.topico-texto h3:hover{
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+
+/* Rodapé */
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .attribution a {
