@@ -22,7 +22,7 @@ body {
     padding-bottom: 2rem;
 }
 
-#menuIniciar {
+#menuAbrir {
     padding: 10px;
     cursor: pointer;
 }
@@ -30,11 +30,12 @@ body {
 .menuOculto {
     background-color: rgb(255, 255, 255);
     height: 100%;
-    width: 15rem;
+    /* width: 15rem; */
+    width: 0rem;
     position: fixed;
     top: 0px;
     right: 0px;
-    display: none;
+    /* display: none; */
 
 }
 
@@ -58,6 +59,7 @@ body {
 .menuOculto a:hover {
     color: hsl(35, 77%, 62%);
     cursor: pointer;
+    transition-duration: 500ms;
 
 }
 
