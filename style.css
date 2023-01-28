@@ -63,6 +63,13 @@ body {
 
 }
 
+.imagemWeb3d{
+    background-image: url(assets/images/image-web-3-mobile.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
 .titulo-principal {
     font-size: 3rem;
     font-weight: 900;
@@ -71,7 +78,7 @@ body {
     line-height: 1;
 }
 
-.titulo-principal+p {
+.principalWeb-botao p {
     margin-top: 1rem;
     margin-bottom: 1rem;
     letter-spacing: 1px;
@@ -95,41 +102,46 @@ body {
     background-color: hsl(240, 100%, 5%);
     cursor: pointer;
     transition-duration: 500ms;
-    
+
 }
 
 
 /* Container do artigo */
-.container-artigos{
-    background-color:  hsl(240, 100%, 5%);
+.container-artigos {
+    background-color: hsl(240, 100%, 5%);
     color: hsl(36, 100%, 99%);
     box-sizing: border-box;
     padding: 1rem;
     margin-bottom: 4rem;
     line-height: 2;
 }
+
 .borda {
     color: hsl(233, 8%, 79%);
     border-bottom: 1px solid hsl(233, 8%, 79%);
     padding-bottom: 2rem;
 }
 
-.noticia{
+.noticia {
     color: hsl(35, 77%, 62%);
 }
-.container-titulo-noticia{
+
+.container-titulo-noticia {
     margin-top: 1rem;
-    
+
 }
+
 .titulo-noticia:hover {
     color: hsl(35, 77%, 62%);
     cursor: pointer;
 }
-.titulo-noticia + p {
+
+.titulo-noticia+p {
     letter-spacing: 1px;
     line-height: 2;
     color: hsl(233, 8%, 79%);
 }
+
 .imagemWeb3d img {
     /* display: inline-block; */
     box-sizing: content-box;
@@ -145,27 +157,29 @@ article {
 
 /* Container de outras notícias */
 
-.container-outras-noticias{
+.container-outras-noticias {
     box-sizing: border-box;
     margin-bottom: 2rem;
 }
 
-.noticias-topicos{
+.noticias-topicos {
     display: flex;
     justify-content: baseline;
     margin-bottom: 2rem;
 }
-.noticias-topicos img{
+
+.noticias-topicos img {
     height: 10rem;
     margin-right: 1.5rem;
 
 }
 
-.topico-texto{
-    box-sizing: border-box;
-    line-height: 1.5;
+.topico-texto {
+    height: 10rem;
+    line-height: 1;
 }
-.topico-texto h2{
+
+.topico-texto h2 {
 
     line-height: 1;
     font-size: 2rem;
@@ -173,10 +187,11 @@ article {
     padding-bottom: 1.5rem;
 }
 
-.topico-texto h3{
+.topico-texto h3 {
     padding-bottom: 1.5rem;
 }
-.topico-texto h3:hover{
+
+.topico-texto h3:hover {
     color: hsl(5, 85%, 63%);
     cursor: pointer;
 }

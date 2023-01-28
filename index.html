@@ -7,6 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleRespon.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&family=Lexend+Deca&family=Outfit:wght@300;400;600&family=Poppins:wght@400;500;600;700&display=swap"
@@ -22,6 +23,11 @@
   <div class="container">
 
     <header class="cabecalho">
+      <div class="topo">
+        <img class="logo" src="assets/images/logo.svg" alt="Logo da página, W com um ponto.">
+        <img id="menuAbrir" onclick="abreMenu()" src="assets/images/icon-menu.svg" alt="">
+      </div>
+
       <nav id="oculto" class="menuOculto">
         <img id="menuFechar" onclick="fechaMenu()" src="assets/images/icon-menu-close.svg" alt="">
         <ul>
@@ -42,26 +48,27 @@
           </a>
         </ul>
       </nav>
-      <div class="topo">
-        <img class="logo" src="assets/images/logo.svg" alt="Logo da página, W com um ponto.">
-        <img id="menuAbrir" onclick="abreMenu()" src="assets/images/icon-menu.svg" alt="">
-      </div>
-
-      <div class="imagemWeb3d"><img src="assets/images/image-web-3-mobile.jpg" alt=""></div>
 
     </header>
-
+    <!-- <div class="principalWeb"> -->
     <section class="container-titulo-principal">
 
-      <h1 class="titulo-principal">The Bright Future of Web 3.0?</h1>
+      <div class="imagemWeb3d"></div>
 
-      <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of
-        the
-        people.
-        But is it really fulfilling its promise?</p>
+      <div class="principalWeb-titulo">
+        <h1 class="titulo-principal">The Bright Future of Web 3.0?</h1>
 
-      <button class="btn-veja-mais">Read more</button>
+        <div class="principalWeb-botao">
+          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the
+            hands
+            of
+            the
+            people.
+            But is it really fulfilling its promise</p>
 
+          <button class="btn-veja-mais">Read more</button>
+        </div>
+      </div>
     </section>
 
     <article class="container-artigos">
@@ -82,7 +89,7 @@
       </div>
 
     </article>
-
+    <!-- </div> -->
     <section class="container-outras-noticias">
 
       <article class="noticias-topicos">
@@ -123,17 +130,17 @@
 
     </section>
 
-    <footer>
-
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
-      </div>
-
-    </footer>
-
-
   </div>
+  <footer>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/hudney-fsbrito">Hudney Brito</a>.
+    </div>
+
+  </footer>
+
+
 
   <script src="script.js"></script>
 

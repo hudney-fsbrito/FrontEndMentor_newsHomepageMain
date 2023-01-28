@@ -1,94 +1,96 @@
-# Frontend Mentor - página inicial de notícias
+# Frontend Mentor - solução de página inicial de notícias
 
-![Visualização do design para o Desafio de codificação da página inicial do Google Notícias](./design/desktop-preview.jpg)
+Esta é uma solução para o [desafio da página inicial de notícias no Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl).
 
-## Bem-vindo! 👋
+![](./assets/images/desktop.gif)
 
-Obrigado por conferir este desafio de codificação de front-end.
+## Índice
 
-Os desafios do [Frontend Mentor](https://www.frontendmentor.io) ajudam você a melhorar suas habilidades de codificação criando projetos realistas.
+- [Visão geral](#visão-geral)
+  - [O desafio](#o-desafio)
+  - [Captura de tela](#captura-de-tela)
+  - [Links](#links)
+- [Meu processo](#meu-processo)
+  - [Construído com](#construído-com)
+  - [O que aprendi](#o-que-aprendi)
+  - [Desenvolvimento contínuo](#desenvolvimento-contínuo)
+- [Autor](#autor)
+- [Agradecimentos](#acknowledgments)
 
-**Para fazer este desafio, você precisa ter um bom conhecimento de HTML e CSS e JavaScript básico.**
+## Visão geral
 
-## O desafio
+### O desafio
 
-Seu desafio é construir a primeira página deste site de notícias e torná-la o mais próximo possível do design.
+Os usuários devem ser capazes de:
 
-Você pode usar qualquer ferramenta que desejar para ajudá-lo a concluir o desafio. Portanto, se você tem algo que gostaria de praticar, sinta-se à vontade para experimentá-lo.
+- O layout para a interface, dependendo do tamanho da tela do dispositivo.
+- Os estados de foco e foco para todos os elementos interativos na página.
 
-Seus usuários devem ser capazes de:
+### Captura de tela
 
-- Veja o layout ideal para a interface dependendo do tamanho da tela do dispositivo
-- Veja os estados de foco e foco para todos os elementos interativos na página
+![](./assets/images/mobile%20(1).gif)
+![](./assets/images/mobile%20(4).png)
+![](./assets/images/mobile%20(3).png)
 
-Quer algum apoio no desafio? [Junte-se à nossa comunidade Slack](https://www.frontendmentor.io/slack) e faça perguntas no canal **#help**.
+<!-- ### Links
 
-## Onde encontrar tudo
+- URL da solução: [Adicionar URL da solução aqui](https://your-solution-url.com)
+- URL do site ao vivo: [Adicione URL do site ao vivo aqui](https://your-live-site-url.com) -->
 
-Sua tarefa é construir o projeto para os designs dentro da pasta `/design`. Você encontrará uma versão móvel e uma versão desktop do design.
+## Meu processo
 
-Os designs estão no formato JPG estático. Usar JPGs significa que você precisará usar seu melhor julgamento para estilos como `font-size`, `padding` e `margin`.
+### Construído com
 
-Se você deseja que os arquivos de design (fornecemos as versões Sketch e Figma) inspecionem o design com mais detalhes, você pode [inscrever-se como membro PRO](https://www.frontendmentor.io/pro).
+- Marcação HTML5 semântica
+- Propriedades personalizadas CSS
+- Flexbox
+- Grid CSS
+- Fluxo de trabalho móvel primeiro
+- Javascript para dinamicidade no menu
 
-Todos os ativos necessários para este projeto estão na pasta `/assets`. As imagens já são exportadas para o tamanho correto da tela e otimizadas.
+### O que eu aprendi
 
-Também incluímos arquivos de fontes variáveis ​​e estáticas para as fontes necessárias para este projeto. Você pode optar por vincular ao Google Fonts ou usar seus arquivos de fontes locais para hospedar as fontes por conta própria. Observe que removemos os arquivos de fonte estáticos para pesos de fonte que não são necessários para este projeto.
+Usar Grid foi um pouco desafiado pra mim desta vez, mas vou pegar o jeito. A utilização de JavaScript foi algo que gostei bastante e pretendo apefeiçoar.
 
-Há também um arquivo `style-guide.md` contendo informações necessárias, como paleta de cores e fontes.
+```css
+ .container{
+        display: grid;
+        flex-direction: row;
+        align-items: center;
+        grid-template-areas: "a1 a1 a1"
+                             "a2 a2 a3"
+                             "a2 a2 a3"
+                             "a4 a4 a4"
+        ;
+        gap: 2rem;
+        
+    }
+```
+```js
+function abreMenu() {
 
-## Construindo seu projeto
+      let abre = document.getElementById("oculto")
+      abre.style.width = `15rem`
+      abre.style.transitionDuration = `500ms`
+    
+  }
+  function fechaMenu() {
 
-Sinta-se à vontade para usar qualquer fluxo de trabalho com o qual se sinta confortável. Abaixo está um processo sugerido, mas você não precisa seguir estas etapas:
+      let fecha = document.getElementById("oculto")
+      fecha.style.width = `0rem`
+    
+  }
+```
 
-1. Inicialize seu projeto como um repositório público no [GitHub](https://github.com/). A criação de um repositório facilitará o compartilhamento de seu código com a comunidade, caso você precise de ajuda. Se você não tiver certeza de como fazer isso, [leia este recurso Try Git](https://try.github.io/).
-2. Configure seu repositório para publicar seu código em um endereço da web. Isso também será útil se você precisar de ajuda durante um desafio, pois pode compartilhar a URL do seu projeto com a URL do repositório. Existem várias maneiras de fazer isso e fornecemos algumas recomendações abaixo.
-3. Examine os designs para começar a planejar como você abordará o projeto. Esta etapa é crucial para ajudá-lo a pensar no futuro para que as classes CSS criem estilos reutilizáveis.
-4. Antes de adicionar qualquer estilo, estruture seu conteúdo com HTML. Escrever seu HTML primeiro pode ajudar a focar sua atenção na criação de conteúdo bem estruturado.
-5. Escreva os estilos básicos para seu projeto, incluindo estilos de conteúdo gerais, como `font-family` e `font-size`.
-6. Comece adicionando estilos ao topo da página e trabalhe para baixo. Apenas passe para a próxima seção quando estiver satisfeito por ter concluído a área em que está trabalhando.
+### Desenvolvimento contínuo
 
-## Implantando seu projeto
+A lingugem em si de programação é algo que quero praticar mais e ganhar abilidade necessária para aprender outras techs que complementem-na.
 
-Como mencionado acima, existem muitas maneiras de hospedar seu projeto gratuitamente. Nossos anfitriões recomendados são:
+## Autor
 
-- [Páginas do GitHub](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+- Website - [Hudney Brito](https://hudney-fsbrito.github.io/Hudney-Brito-Portfolio-/)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 
-Você pode hospedar seu site usando uma dessas soluções ou qualquer um de nossos outros provedores confiáveis. [Leia mais sobre nossos hosts recomendados e confiáveis](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+## Agradecimentos
 
-## Crie um `README.md` personalizado
-
-Recomendamos fortemente substituir este `README.md` por um personalizado. Fornecemos um modelo dentro do arquivo [`README-template.md`](./README-template.md) neste código inicial.
-
-O modelo fornece um guia sobre o que adicionar. Um `README` personalizado ajudará você a explicar seu projeto e refletir sobre seus aprendizados. Sinta-se à vontade para editar nosso modelo o quanto quiser.
-
-Depois de adicionar suas informações ao modelo, exclua este arquivo e renomeie o arquivo `README-template.md` para `README.md`. Isso fará com que apareça como o arquivo README do seu repositório.
-
-## Enviando sua solução
-
-Envie sua solução na plataforma para o resto da comunidade ver. Siga nosso ["Guia completo para enviar soluções"](https://medium.com/frontend-mentor/a-complete-guide-to-submitted-solutions-on-frontend-mentor-ac6384162248) para obter dicas sobre como fazer esta.
-
-Lembre-se de que, se estiver procurando feedback sobre sua solução, faça perguntas ao enviá-la. Quanto mais específico e detalhado você for com suas perguntas, maior a chance de obter um feedback valioso da comunidade.
-
-## Compartilhando sua solução
-
-Existem vários lugares onde você pode compartilhar sua solução:
-
-1. Compartilhe sua página de solução no canal **#finished-projects** da [comunidade Slack](https://www.frontendmentor.io/slack).
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) e mencione **@frontendmentor**, incluindo o repo e os URLs ativos no tweet. Adoraríamos dar uma olhada no que você construiu e ajudar a compartilhá-lo.
-3. Compartilhe sua solução em outros canais sociais como o LinkedIn.
-4. Faça um blog sobre sua experiência na construção de seu projeto. Escrever sobre seu fluxo de trabalho, escolhas técnicas e falar sobre seu código é uma maneira brilhante de reforçar o que você aprendeu. Ótimas plataformas para escrever são [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/) e [CodeNewbie](https://community.codenewbie.org /).
-
-Fornecemos modelos para ajudá-lo a compartilhar sua solução depois de enviá-la na plataforma. Edite-os e inclua perguntas específicas quando estiver procurando feedback.
-
-Quanto mais específico você for com suas perguntas, mais provável será que outro membro da comunidade lhe dê feedback.
-
-## Tem feedback para nós?
-
-Adoramos receber feedback! Estamos sempre buscando melhorar nossos desafios e nossa plataforma. Portanto, se você tiver algo que gostaria de mencionar, envie um e-mail hi[at]frontendmentor[dot]io.
-
-Este desafio é totalmente gratuito. Por favor, compartilhe com qualquer pessoa que achará útil para a prática.
-
-**Divirta-se construindo!** 🚀
+É sempre uma gratidão ter plataformas como o Frontend Mentor com pessoas dispostas a deixar seus conhecimentos para ajudar quem está querendo entrar nessa área. Agradeço também às figuras que tenho como inspiração.

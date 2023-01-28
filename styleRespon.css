@@ -1,0 +1,125 @@
+@media screen and (min-width: 700px) {
+    .noticias-topicos {
+        width: 70%;
+    }
+
+    .container-outras-noticias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 925px) {
+    
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container-outras-noticias {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #menuAbrir,
+    #menuFechar {
+        display: none;
+        visibility: hidden;
+    }
+
+    .cabecalho {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+    
+    .menuOculto {
+        width: auto;
+        position: static;
+        padding: 0;
+        
+    }
+    
+    .menuOculto a {
+        color: hsl(236, 13%, 42%);
+        display: inline-block;
+        margin-left: 2rem;
+    }
+    .menuOculto a:hover {
+        color: hsl(5, 85%, 63%);
+    }
+
+
+    /* ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+    .container{
+        display: grid;
+        flex-direction: row;
+        align-items: center;
+        grid-template-areas: "a1 a1 a1"
+                             "a2 a2 a3"
+                             "a2 a2 a3"
+                             "a4 a4 a4"
+        ;
+        gap: 2rem;
+        
+    }
+
+    
+    .cabecalho{
+        grid-area: a1;
+        
+    }
+    .container-titulo-principal{
+        grid-area: a2;
+        display: grid;
+        grid-template-columns: auto;
+        
+    }
+    .principalWeb-titulo{
+        grid-area: auto;
+        display: grid;
+        grid-template-areas: "b1 b2";
+    }
+
+        .titulo-principal{
+            grid-area: b1;
+            margin: 0;
+            margin-top: 3rem;
+            padding: 0;
+        }
+        .principalWeb-botao{
+            grid-area: b2;
+            padding-right: 3rem;
+        }
+        .principalWeb-botao p{
+            text-align: left;
+            margin: 3rem 0rem 1rem 0rem;
+            
+        }
+        .btn-veja-mais{
+            margin: 0;
+
+        }
+    .container-artigos{
+        grid-area: a3;
+        margin: 0;
+        padding: 2rem;
+    }
+    .container-outras-noticias{
+        grid-area: a4;
+    }
+
+    .imagemWeb3d{
+        background-image: url(assets/images/image-web-3-desktop.jpg);
+        height: 300px;
+
+        grid-area: auto;
+    }
+   
+
+}
